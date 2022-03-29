@@ -1,21 +1,37 @@
-# Next.js + Tailwind CSS Example
+<img align="center" src="src/assets/tela.gif" alt="Books Store">
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deploy your own
+# 📖 Projeto
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Este projeto foi iniciado com base em um vídeo do [Lee Robinson] (https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw), meu objeito é ir além e transformar o projeto em uma loja de livros integrada ao Stripe. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## 🧪 Tecnologias
 
-## How to use
+ [![My Skills](https://skillicons.dev/icons?i=ts,nextjs,supabase,tailwind)](https://skillicons.dev)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## 🚀 Como executar
+
+Para inicializar o projeto localmente siga os passos descritos abaixo:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+# Clone o repositório
+$ git clone https://github.com/d0ugui/books-store.git
+
+# Entre no repositório
+$ cd books-store
+
+# Instale as dependências
+$ npm install or yarn
+
+# É necessário definir as variáveis de ambiente SUPABASE_URL e SERVICE_ROLE
+$ crie o arquivo .env.local com as variáveis
+
+# Execute a aplicação
+$ npm run dev or yarn dev
+
+# O aplicação inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## 📝 License
+
+Esse projeto está sob a licença MIT.
