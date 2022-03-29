@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import cn from "../../../src/utils/combineClass";
+import cn from "../../src/utils/combineClass";
 
-export function BlurImage() {
+import { ImageType } from "../../src/types/image";
+
+export function BlurImage({ image }: { image: ImageType }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
@@ -11,7 +13,7 @@ export function BlurImage() {
       <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
         <Image
           alt=""
-          src="https://bit.ly/placeholder-img"
+          src={image.imageSrc}
           layout="fill"
           objectFit="cover"
           className={cn(
@@ -23,8 +25,8 @@ export function BlurImage() {
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">Lee Robinson</h3>
-      <p className="mt-1 text-lg font-medium text-gray-900">@leeerob</p>
+      <h3 className="mt-4 text-sm text-gray-700">R$ {image.price}</h3>
+      <p className="mt-1 text-lg font-medium text-gray-900">{image.name}</p>
     </a>
   );
 }

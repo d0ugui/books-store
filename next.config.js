@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['bit.ly']
+    domains: ['storage.googleapis.com']
   }
 }
