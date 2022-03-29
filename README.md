@@ -3,7 +3,7 @@
 
 # 📖 Projeto
 
-Este projeto foi iniciado com base em um vídeo do [Lee Robinson] (https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw), meu objeito é ir além e transformar o projeto em uma loja de livros integrada ao Stripe. 
+Este projeto foi iniciado com base em um vídeo do [Lee Robinson](https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw), meu objeito é ir além e transformar o projeto em uma loja de livros integrada ao Stripe. 
 
 ## 🧪 Tecnologias
 
