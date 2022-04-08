@@ -1,4 +1,4 @@
-import { BlurImage } from "./components/BlurImage";
+import { BlurImage } from "../src/components/BlurImage";
 import { supabaseAdmin } from "../src/services/supabase";
 
 import { ImageType } from '../src/types/image';
