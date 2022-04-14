@@ -5,28 +5,25 @@ import cn from "../../src/utils/combineClass";
 
 import { ImageType } from "../../src/types/image";
 
-export function BlurImage({ image }: { image: ImageType }) {
+export default function BlurImage({ image }: { image: ImageType }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <a href="#" className="group">
-      <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+    <a href={image.imageSrc} className="group relative">
+      <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-[7/8]">
         <Image
           alt=""
           src={image.imageSrc}
-          layout="fill"
+          layout="responsive"
+          width={350}
+          height={400}
           objectFit="cover"
-          className={cn(
-            'group-hover:opacity-75 duration-700 ease-in-out',
-            isLoading
-              ? 'grayscale blur-2xl scale-110'
-              : 'grayscale-0 blur-0 scale-100'
-          )}
+          className='group-hover:opacity-75 duration-700 ease-in-out rounded-lg grayscale blur-2xl scale-110'
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">R$ {image.price}</h3>
-      <p className="mt-1 text-lg font-medium text-gray-900">{image.name}</p>
+      <p className="mt-2 text-lg font-semibold text-gray-900">{image.name}</p>
+      <h2 className="mt-1 text-sm text-gray-700">R$ {image.price}</h2>
     </a>
   );
 }
